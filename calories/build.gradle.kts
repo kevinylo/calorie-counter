@@ -33,7 +33,6 @@ dependencies {
     implementation(project(":core-interface"))
     implementation(project(":dagger"))
     implementation(project(":core-basemrp"))
-    implementation(project(":calories-manager"))
 
     implementation(deps.ui.material)
 
