@@ -15,6 +15,10 @@ class CaloriesManagerImpl(
         return repo.foodEntriesBefore(dateTime)
     }
 
+    override fun loadEntriesToday(): Single<List<FoodEntry>> {
+        return repo.foodEntriesTodayOr()
+    }
+
     override fun add(entry: FoodEntry): Completable {
         return repo.insertFoodEntry(entry)
     }

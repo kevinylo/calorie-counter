@@ -5,6 +5,7 @@ import com.example.calories.Optional
 import com.example.calories.details.adpater.DetailsConverter.toEntryRow
 import com.example.manager.CaloriesManager
 import com.uber.autodispose.autoDispose
+import io.reactivex.Observable
 import io.reactivex.schedulers.Schedulers
 import org.joda.time.DateTime
 import timber.log.Timber
@@ -43,8 +44,11 @@ class DetailsPresenter @Inject constructor(
                 Timber.e(it)
             })
 
-        renderer
-            .entriesUpdated
+        Observable.merge(
+            Observable.just(Unit),
+            renderer.entriesUpdated
+        )
+            .observeOn(Schedulers.io())
             .flatMap {
                 caloriesManager.loadEntries()
             }
@@ -66,16 +70,6 @@ class DetailsPresenter @Inject constructor(
             }, {
                 Timber.e(it)
             })
-
-        caloriesManager
-            .loadEntries()
-            .autoDispose(renderer)
-            .subscribe({ entries ->
-                emit(Initialize(entries.toEntryRow()))
-            }, {
-                Timber.e(it)
-            })
-
     }
 
 }

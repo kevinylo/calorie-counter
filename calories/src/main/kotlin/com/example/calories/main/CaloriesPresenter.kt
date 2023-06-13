@@ -40,8 +40,8 @@ class CaloriesPresenter @Inject constructor(
             renderer.entriesUpdated
         )
             .observeOn(Schedulers.io())
-            .flatMap {
-                caloriesManager.loadEntries()
+            .flatMapSingle {
+                caloriesManager.loadEntriesToday()
             }
             .map { entries ->
                 val categoryData = entries.toMealCategoryData()

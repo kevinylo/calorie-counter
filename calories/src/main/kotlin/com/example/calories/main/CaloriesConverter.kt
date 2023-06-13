@@ -3,17 +3,11 @@ package com.example.calories.main
 import com.example.calories.FoodEntry
 import com.example.calories.MealCategoryData
 import com.example.calories.modelconstant.MealType
-import org.joda.time.DateTime
-import org.joda.time.DateTimeZone
 
 object CaloriesConverter {
     fun List<FoodEntry>.toMealCategoryData(): MutableMap<MealType, MealCategoryData> {
         val map = mutableMapOf<MealType, MealCategoryData>()
-        this.filter {
-            it.entryDate.toDateTime(DateTimeZone.forOffsetHours(-8)) >=
-                    DateTime.now(DateTimeZone.forOffsetHours(-8))
-                        .toLocalDate().toDateTimeAtStartOfDay(DateTimeZone.forOffsetHours(-8))
-        }.groupBy { it.type }.forEach { (type, entries) ->
+        this.groupBy { it.type }.forEach { (type, entries) ->
             val caloriesTotal = entries.map { it.calories }.reduce { total, current ->
                 total + current
             }

@@ -12,7 +12,7 @@ abstract class FoodEntryDao {
     @Query("SELECT * FROM food_entry WHERE entry_date <= :date ORDER BY entry_date DESC LIMIT 100")
     abstract fun foodEntriesBeforeDateTime(date: DateTime): Observable<List<FoodEntry>>
 
-    @Query("SELECT * FROM food_entry WHERE entry_date >= :date")
+    @Query("SELECT * FROM food_entry WHERE entry_date >= :date ORDER BY entry_date DESC LIMIT 100")
     abstract fun foodEntriesTodayOr(date: DateTime): Single<List<FoodEntry>>
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
@@ -24,7 +24,7 @@ abstract class FoodEntryDao {
     @Update
     abstract fun updateFoodEntry(entry: FoodEntry): Completable
 
-    @Query("SELECT * FROM food_entry WHERE name LIKE :key LIMIT 100")
+    @Query("SELECT * FROM food_entry WHERE name LIKE :key ORDER BY entry_date DESC LIMIT 100")
     abstract fun foodEntriesNameMatching(key: String): Single<List<FoodEntry>>
 
     @Query("DELETE FROM food_entry")
