@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!--
+          Hex Opacity Values
+              100% — FF
+              95% — F2
+              90% — E6
+              85% — D9
+              80% — CC
+              75% — BF
+              70% — B3
+              65% — A6
+              60% — 99
+              55% — 8C
+              50% — 80
+              45% — 73
+              40% — 66
+              35% — 59
+              30% — 4D
+              25% — 40
+              20% — 33
+              15% — 26
+              10% — 1A
+              5% — 0D
+              0% — 00
+      -->
+    <!-- Dove UI Color Palette -->
+
+    <!-- Bird brand design colors -->
+    <color name="birdRed">#FA6450</color>
+    <color name="birdMint">#54D6C8</color>
+    <color name="birdBlue">#5E9BEC</color>
+    <color name="birdViolet">#C74DC7</color>
+    <color name="birdGold">#FFB56C</color>
+    <color name="birdTeal">#8D9CFC</color>
+    <color name="birdESBlueLight">#E9E7FD</color>
+    <!-- New color palette colors -->
+    <color name="birdNewRoad">#002139</color>
+    <color name="birdDarkBlueGray">#5E7386</color>
+    <color name="birdESBlue">#26CCF0</color>
+    <color name="birdESBlue50">#8026CCF0</color>
+    <color name="birdESBlue20">#3326CCF0</color>
+    <color name="birdBlue20">#335E9BEC</color>
+    <color name="birdSand">#FFF4E9</color>
+    <color name="birdParkingBlue">#0050C3</color>
+    <!-- Used by white label apps -->
+    <color name="birdTwilight">#695DF0</color>
+    <color name="birdMatteBlack">#3D3D3D</color>
+    <color name="birdDarkGray1">#8D8D8D</color>
+
+    <!-- New Master Colors (https://www.figma.com/file/MBTlc9HUTmfzhMNJVXKbVYMI/1.-Foundations?node-id=0%3A1) -->
+
+    <color name="birdJetBlack">#000000</color>
+    <color name="birdBlack">#1C1C1E</color>
+    <color name="birdCharcoal">#3A3A3C</color>
+    <color name="birdDarkGray2">#8E8E93</color>
+    <color name="birdGray">#D0D0D0</color>
+    <color name="birdLightGray">#EDEDED</color>
+    <color name="birdSubtleGray">#FAFAFA</color>
+    <color name="birdWhite">#FFFFFF</color>
+    <color name="birdYellow">#FFB56C</color>
+    <color name="birdGreen">#30AA46</color>
+
+    <!-- UI Colors (light variations) -->
+
+    <color name="baseBG">@color/birdSubtleGray</color>
+    <color name="primaryBG">@color/white</color>
+    <color name="secondaryBG">@color/birdGray</color>
+    <color name="tertiaryBG">@color/birdSand</color>
+    <color name="primaryText">@color/birdNewRoad</color>
+    <color name="passiveText">@color/birdDarkBlueGray</color>
+    <color name="calloutText">@color/birdNewRoad</color>
+    <color name="primaryAccent">@color/birdNewRoad</color>
+    <color name="brandAccent">@color/birdESBlue</color>
+    <color name="lightSplashBG">@color/brandAccent</color>
+
+    <!-- Day/Night Customizations -->
+    <color name="button_secondary_solid">@color/primaryBG</color>
+    <color name="button_secondary_stroke">@color/secondaryBG</color>
+    <color name="button_secondary_text">@color/primaryText</color>
+    <color name="navigation_background_color">@color/birdWhite</color>
+    <color name="navigation_color_control_normal">@color/birdNewRoad</color>
+    <color name="user_role_item_background">@color/user_role_item_dark_background</color>
+
+    <!-- Primary -->
+    <color name="white">@color/birdWhite</color>
+
+    <!-- Secondary -->
+    <color name="mint">@color/birdMint</color>
+    <color name="red">@color/birdRed</color>
+
+    <!-- Tertiary -->
+    <color name="blue">@color/birdBlue</color>
+    <color name="violet">@color/birdViolet</color>
+    <color name="peach">@color/birdGold</color>
+
+    <!-- Accents -->
+    <color name="rose">@color/birdRed</color>
+    <color name="yellow">@color/birdYellow</color>
+    <color name="green">@color/birdGreen</color>
+
+    <!-- Grayscale -->
+    <color name="charcoal">@color/birdDarkGray1</color>
+    <color name="darkGray">#A9A9A9</color>
+    <color name="gray">@color/birdGray</color>
+    <color name="lightGray">@color/birdLightGray</color>
+    <color name="subtleGray">@color/birdSubtleGray</color>
+
+    <!-- Overlays -->
+    <color name="overlay65">#A6000000</color>
+    <color name="overlay35">#59000000</color>
+
+    <!-- Policy Zones -->
+    <color name="zone_no_ride">#66FA5050</color>
+    <color name="zone_no_parking">#66002139</color>
+    <color name="zone_parking">#6654D6C8</color>
+    <color name="zone_slow">#66FFB56C</color>
+
+    <!-- Error -->
+    <color name="errorRed">@color/birdRed</color>
+    <color name="errorRedTransparent">#40FA5050</color>
+    <color name="successGreenTransparent">#4030AA46</color>
+    <color name="warningYellowTransparent">#40F4B02B</color>
+
+    <!-- End Dove UI Color Palette -->
+
+    <!-- Standard colors for Material Design theme-->
+    <color name="colorPrimary">@color/birdNewRoad</color>
+    <color name="colorPrimaryDark">@color/black</color>
+    <color name="colorAccent">@color/birdNewRoad</color>
+
+    <color name="colorPrimaryAlt">@color/white</color>
+    <color name="colorPrimaryDarkAlt">@color/birdDarkBlueGray</color>
+    <color name="colorAccentAlt">@color/birdNewRoad</color>
+
+    <color name="brightRed">#da202d</color>
+    <color name="birdESBlueTransparent">#1426CCF0</color>
+
+    <color name="materialBackground">#F6F7F8</color>
+    <color name="dividerColor">#DBDDDE</color>
+    <color name="linkColor">@color/calloutText</color>
+    <color name="white90">#E6FFFFFF</color>
+    <color name="black">#FF000000</color>
+    <color name="lighterGray">#ddd</color>
+    <color name="darkerGray">#aaa</color>
+    <color name="grayDividerColor">#979797</color>
+
+    <color name="lightRed">#ff6666</color>
+    <color name="redish">#ea4e4e</color>
+    <color name="lightGreen">#eaf7ec</color>
+    <color name="greenish">#71af05</color>
+    <color name="extraGreen">#09B186</color>
+    <color name="teal">@color/birdMint</color>
+    <color name="veryDarkGray">#4A4A4A</color>
+    <color name="prettyDarkGray">#4F4F4F</color>
+
+    <color name="lightPurple">#ddd1e7</color>
+    <color name="transparentLightPurple">#80ddd1e7</color>
+    <color name="warning">#E4D958</color>
+
+    <color name="labelLock">#FFD100</color>
+    <color name="labelDamaged">#F57123</color>
+    <color name="labelLost">#6E6E6E</color>
+    <color name="labelAlarm">#D2051E</color>
+    <color name="labelRelease">@color/birdJetBlack</color>
+
+    <color name="blue07">#FF1787FB</color>
+    <color name="blue06">#FF41b9e1</color>
+    <color name="mapPathBlue">#6581D3</color>
+    <color name="mapBeaconBlue">#4285F4</color>
+    <color name="facebookBlue">#4267B2</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="transparentBlack">#7f000000</color>
+    <color name="transparentWhite">#00FFFFFF</color>
+
+    <color name="mainBackground">#2F2F2F</color>
+
+    <color name="mechanicRed">#FF505B</color>
+    <color name="mechanicBlack">#2F2F2F</color>
+
+    <!-- Rider Tutorial -->
+    <color name="CircleIndicatorView_fillColor">@color/birdNewRoad</color>
+    <color name="CircleIndicatorView_pageColor">@color/birdDarkBlueGray</color>
+    <color name="CircleIndicatorView_strokeColor">@android:color/transparent</color>
+    <color name="rider_tutorial_body_shadow">@color/black</color>
+
+    <color name="birdScanScrimColor">#cc000000</color>
+
+    <!-- Charger drop feedback -->
+    <color name="bad_drop_text_color">#FF505B</color>
+    <color name="good_drop_text_color">#1ADA12</color>
+    <color name="drop_details_text_color">#A6002139</color>
+    <color name="drop_feedback_release_rating_text_color">@color/birdNewRoad</color>
+
+    <!-- Bird Watcher toolbox -->
+    <color name="bird_status_title_color">#C0C0C0</color>
+    <color name="start_report_title_color">#C0C0C0</color>
+
+    <!-- Charger nav drawer -->
+    <color name="white10">#E6E6E6</color>
+    <color name="charger_nav_drawer_background">@color/birdNewRoad</color>
+
+    <!-- User Role -->
+    <color name="user_role_item_dark_background">@color/birdDarkBlueGray</color>
+    <color name="user_role_item_light_background">@color/subtleGray</color>
+
+    <color name="bird_action_button_background">#12FFFFFF</color>
+    <color name="bird_action_button_outline">@color/birdCharcoal</color>
+
+    <color name="destination_line">@color/birdESBlue</color>
+    <color name="destination_line_shadow">#1A000000</color>
+
+    <!-- Repair -->
+    <color name="failedIssueRed">#FFEDED</color>
+    <color name="passedIssueGreen">#E0F2E3</color>
+
+    <!-- Brand design colors with alpha -->
+    <color name="birdBlue10">#1A5E9BEC</color>
+    <color name="birdRed10">#1AFA5050</color>
+    <color name="birdYellow10">#1AF4B02B</color>
+    <color name="birdESBlue65">#A626CCF0</color>
+    <color name="birdWhite08">#14FFFFFF</color>
+    <color name="birdMatteBlack25">#403D3D3D</color>
+
+    <color name="mtrl_textinput_default_box_stroke_color" tools:override="true" tools:ignore="PrivateResource">@color/darkGray</color>
+
+</resources>

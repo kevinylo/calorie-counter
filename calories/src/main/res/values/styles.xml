@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="TextInputLayoutStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox" >
+        <item name="boxStrokeColor">@color/darkGray</item>
+        <item name="boxStrokeWidth">2dp</item>
+    </style>
+
+    <style name="BaseLightAppTheme" parent="Theme.MaterialComponents.Light.Bridge">
+        <item name="colorPrimary">@color/colorPrimaryAlt</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkAlt</item>
+        <item name="colorAccent">@color/colorAccentAlt</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Body2</item>
+        <item name="android:textColorLink">@color/linkColor</item>
+
+        <!-- App custom attributes -->
+        <item name="android:textColorPrimary">@color/primaryText</item>
+        <item name="android:textColorSecondary">@color/passiveText</item>
+    </style>
+
+    <style name="LightAppTheme" parent="BaseLightAppTheme"/>
+
+    <style name="PrimaryButton" parent="Button">
+        <item name="android:textColor">@drawable/button_primary_state_list</item>
+        <item name="android:background">@drawable/button_primary</item>
+    </style>
+</resources>

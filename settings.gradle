@@ -1,0 +1,6 @@
+rootProject.name = "Calories"
+include (":app", ":dagger",
+        ":core-interface", ":core-basemrp", ":calories-manager", ':calories',
+        ":persistence-calories", ":model-persistence", ":model", ":repository", ":model-constant")
+include ':persistence-calories:api'
+include ':persistence-calories:impl'
