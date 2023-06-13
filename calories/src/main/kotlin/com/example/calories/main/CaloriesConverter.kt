@@ -8,16 +8,16 @@ object CaloriesConverter {
     fun List<FoodEntry>.toMealCategoryData(): MutableMap<MealType, MealCategoryData> {
         val map = mutableMapOf<MealType, MealCategoryData>()
         this.groupBy { it.type }.forEach { (type, entries) ->
-            val caloriesTotal = entries.map { it.calories }.reduce { total, current ->
+            val caloriesTotal = entries.map { it.calories }.filter { it < 10000f }.reduce { total, current ->
                 total + current
             }
-            val fatTotal = entries.mapNotNull { it.fat }.takeIf { it.isNotEmpty() }?.reduce { total, current ->
+            val fatTotal = entries.mapNotNull { it.fat }.filter { it < 10000f }.takeIf { it.isNotEmpty() }?.reduce { total, current ->
                 total + current
             }
-            val proteinTotal = entries.mapNotNull { it.protein }.takeIf { it.isNotEmpty() }?.reduce { total, current ->
+            val proteinTotal = entries.mapNotNull { it.protein }.filter { it < 10000f }.takeIf { it.isNotEmpty() }?.reduce { total, current ->
                 total + current
             }
-            val carbsTotal = entries.mapNotNull { it.carb }.takeIf { it.isNotEmpty() }?.reduce { total, current ->
+            val carbsTotal = entries.mapNotNull { it.carb }.filter { it < 10000f }.takeIf { it.isNotEmpty() }?.reduce { total, current ->
                 total + current
             }
             map[type] = MealCategoryData(
