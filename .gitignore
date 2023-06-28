@@ -13,3 +13,6 @@
 .externalNativeBuild
 .cxx
 local.properties
+/repository/build/
+/core-basemrp/build/
+/calories-manager/build/
