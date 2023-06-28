@@ -1,6 +1,3 @@
-![screenshot](https://github.com/kevinylo/calorie-counter/blob/main/first.jpg?raw=true)
-![screenshot](https://github.com/kevinylo/calorie-counter/blob/main/second.jpg?raw=true)
-
 ## architecture
 Various modules
 ### app
@@ -32,3 +29,6 @@ Various modules
 ### dagger
 - App module provides general system resources to be injected
 - CaloriesModule provides calories manager, calories repository, food entry database and dao.
+### Screenshots
+![screenshot](https://github.com/kevinylo/calorie-counter/blob/main/first.jpg?raw=true)
+![screenshot](https://github.com/kevinylo/calorie-counter/blob/main/second.jpg?raw=true)
