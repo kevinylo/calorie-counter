@@ -2,9 +2,9 @@
 
 object deps {
   object versions {
-    const val kotlin = "1.7.22"
+    const val kotlin = "1.8.21"
     const val dagger = "2.43.2"
-    const val androidxVersion = "1.2.0"
+    const val androidxVersion = "1.3.0"
     const val rxBindingsVersion = "3.0.0"
     const val gradle = "7.1.2"
     const val retrofit = "2.7.1"
@@ -119,6 +119,10 @@ object deps {
     const val androidFlowLayout = "org.apmem.tools:layouts:1.10@aar"
     const val glide = "com.github.bumptech.glide:glide:${versions.glide}"
     const val mpAndroidChart = "com.github.PhilJay:MPAndroidChart:v3.1.0"
+    const val composeUi = "androidx.compose.ui:ui:1.4.3"
+    const val composeFoundation = "androidx.compose.foundation:foundation:1.4.3"
+    const val composeMaterial3 = "androidx.compose.material3:material3:1.1.1"
+    const val composeConstraintLayout = "androidx.constraintlayout:constraintlayout-compose:1.0.1"
   }
 
   object reporting {

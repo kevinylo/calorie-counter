@@ -23,6 +23,11 @@ android {
 
     buildFeatures {
         viewBinding = true
+        compose = true
+    }
+
+    composeOptions {
+        kotlinCompilerExtensionVersion = "1.4.7"
     }
 }
 
@@ -35,6 +40,10 @@ dependencies {
     implementation(project(":core-basemrp"))
 
     implementation(deps.ui.material)
+    implementation(deps.ui.composeUi)
+    implementation(deps.ui.composeFoundation)
+    implementation(deps.ui.composeMaterial3)
+    implementation(deps.ui.composeConstraintLayout)
 
     implementation(deps.util.joda)
 
