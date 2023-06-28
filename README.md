@@ -21,6 +21,7 @@ Various modules
 ### model-persistence
 - Data classes directly tied to persistence
 ### calories
+- (update) Using Jetpack Compose composeView instead of recyclerView (removing adapter)
 - CaloriesActivity (main) controls CaloriesFragment and DetailsFragment
 - EntryActivity handles data entry, delete, and modification.
 - Contains bits needed for this screen/screens (sub dagger component, states used by presenter, renderer interface, presenter, activity, etc)
