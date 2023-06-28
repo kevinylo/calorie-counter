@@ -1,3 +1,6 @@
+![screenshot](https://github.com/kevinylo/calorie-counter/blob/main/first.jpg?raw=true)
+![screenshot](https://github.com/kevinylo/calorie-counter/blob/main/second.jpg?raw=true)
+
 ## architecture
 Various modules
 ### app
